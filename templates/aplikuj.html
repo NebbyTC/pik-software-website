@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<title>Pik Software Development</title>
+
+	<link rel="stylesheet" type="text/css" href="static/style.css">
+	<script src="static/slider.js"></script>
+	<script src="static/categoryRedirector.js"></script>
+
+</head>
+<body onload=setSlide()>
+	<div id="container">
+		
+		<div id="top_logo_background">
+			<div id="top_logo">
+
+				<a href="/">
+					<h2>Pik Software Development</h2>
+					to tutaj powstaje oprogramowanie
+				</a>
+
+			</div>
+		</div>
+
+		<nav id="top_bar">
+			<a href="/produkty" class="nab-link" >Produkty</a>
+			<a href="/rozwiązania" class="nab-link" >Rozwiązania</a>
+			<a href="/akcje" class="nab-link" >Akcje</a>
+			<a href="/kontrybucje" class="nab-link" >Kontrybucje</a>
+			<a href="/praca" class="nab-link" >Praca</a>
+		</nav>
+
+		<!-- Częśc główna -->
+		<article class="job-attr-container">
+			<article class="job-attr">
+				{{ technologia }}
+				<p style="font-size: 15px;">technologia</p>
+			</article>
+
+			<article class="job-attr">
+				{{ poziom_doswiadczenia }}
+				<p style="font-size: 15px;">poziom doświadczenia</p>
+			</article>
+
+			<article class="job-attr">
+				{{ miejsce_pracy }}
+				<p style="font-size: 15px;">miejsce pracy</p>
+			</article>
+		</article>
+
+
+		<div class="category-info">
+			<h1 style="padding: 5px; font-size: 35px;">{{ nazwa_stanowiska }}</h1> 
+			<div style="width:100%; height:100%; text-align: left; padding: 10px;">
+				{{ opis_stanowiska }}
+			</div>
+		</div>
+
+		<div class="category-info"> 
+			<div style="width:100%; height:100%; text-align: left; padding: 10px;">
+				<h1 style="padding: 5px; font-size: 15px;">Twoje zadania:</h1>
+			{% for wymaganie in wymagania %}
+				<li>{{ wymaganie }}</li>
+			{% endfor %}
+			</div>
+		</div>
+
+		<div class="category-info"> 
+			<div style="width:100%; height:100%; text-align: left; padding: 10px;">
+				<h1 style="padding: 5px; font-size: 15px;">Czego wymagamy:</h1>
+			{% for kwalifikacja in kwalifikacje %}
+				<li>{{ kwalifikacja }}</li>
+			{% endfor %}
+			</div>
+		</div>
+
+		<div class="category-info"> 
+			<div style="width:100%; height:100%; text-align: left; padding: 10px;">
+				<h1 style="padding: 5px; font-size: 15px;">Co oferujemy:</h1>
+			{% for benefit in benefity %}
+				<li>{{ benefit }}</li>
+			{% endfor %}
+			</div>
+		</div>
+
+		<div class="category-info"> 
+			<div style="width:100%; height:100%; text-align: left; padding: 10px;">
+				Złóż do nas podanie już dzisiaj!<br><input style="background-color: #202020; color: white;" id="buy-button" value="Aplikuj" type="SUBMIT"></input>
+			</div>
+		</div>
+
+
+
+	
+		<!-- Stopka -->
+		<footer id="footer"></footer>
+
+	</div>
+</body>
+</html>

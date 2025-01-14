@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<title>Pik Software Development</title>
+
+	<link rel="stylesheet" type="text/css" href="{{ domena }}/static/style.css">
+	<script src="{{ domena }}/static/slider.js"></script>
+	<script src="{{ domena }}/static/slider.js"></script>
+
+</head>
+<body>
+	<div id="container">
+		
+		<div id="top_logo_background">
+			<div id="top_logo">
+
+				<a href="/">
+					<h2>Pik Software Development</h2>
+					to tutaj powstaje oprogramowanie
+				</a>
+
+			</div>
+		</div>
+
+		<nav id="top_bar">
+			<a href="/produkty" class="nab-link" >Produkty</a>
+			<a href="/rozwiązania" class="nab-link" >Rozwiązania</a>
+			<a href="/akcje" class="nab-link" >Akcje</a>
+			<a href="/kontrybucje" class="nab-link" >Kontrybucje</a>
+			<a href="/praca" class="nab-link" >Praca</a>
+		</nav>
+
+		<article id="dane-produktu">
+			<!-- Podgląd produktu -->
+			<div id="product-img-buy">
+				<img style="width: 100%; height: 100%;" src="{{ domena }}/static/{{ img_produktu }}">
+			</div>
+
+			<!-- Dane produktu -->
+			<div id="specs">
+				<div id="bosag">
+					<h2>Specyfikacja Produktu</h2><br>
+
+					<b>Nazwa:</b> {{ nazwa }}<br>
+					<b>Cena:</b> {{ cena }}<br>
+					<b>Kompatybilnośc:</b> {{ kompatyblinosc }}<br>
+					<b>Wymagania:</b> {{ wymagania }}<br><br>
+					<b>Funkcje:</b><ul><li>{{ funkcja1 }}</li><li>{{ funkcja2 }}</li></ul><br><br><br>
+
+					<form method="POST" action="/zakup">
+						<input name="produkt" type="hidden" value="{{ nazwa }}"></input>
+						<input name="cena" type="hidden" value="{{ cena }}"></input>
+						<input id="buy-button" value="Kup" type="SUBMIT"></input>
+					</form>
+				</div>
+			</div>
+		</article>
+
+		<!-- Opis -->
+		<div class="category-info">
+			<h1>Dlaczego {{ nazwa }}?</h1> 
+			<div style="width:100%; height:100%; text-align: left; padding: 10px;">
+				{{ opis }}
+			</div>
+		</div>
+
+		<!-- Otoczenie slajdera -->
+		<div class="border-top"></div>
+
+		<div id="background">
+			<div class="top-push"><br><br><br><br></div>
+			<div id="blur-black-container">
+				<h1 style="padding: 5px;">Zobacz oprogramowanie w akcji!</h1>
+				<!-- Slajder -->
+				<div class="button" onclick={{ slajder }}.slidedown()><</div>
+				<div id="slider"><img id="slider-img"src=""></div>
+				<div class="button" onclick={{ slajder }}.slideup()>></div>
+			</div>
+		</div>
+
+		<div class="border-bottom"></div>
+
+		<!-- Stopka -->
+		<footer id="footer"></footer>
+		
+
+	
+	</div>
+</body>
+</html>

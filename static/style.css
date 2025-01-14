@@ -1,0 +1,491 @@
+body {
+	padding: 0px;
+	margin: 0px;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+b {
+	cursor: pointer;
+}
+
+#container {
+	height: 2400px;
+}
+
+#container-category {
+	height: 100px;
+}
+
+#container-pcc {
+	height: 3500px;
+}
+
+#top_logo_background {
+	width: 100%;
+	height: 300px;
+
+	background-color: black;
+	position: relative;
+
+	background-image: url("tlo_1.png");
+
+	/* paralax effects */
+	min-height: 300px;
+  	background-attachment: fixed;
+  	background-position: center;
+ 	background-repeat: no-repeat;
+  	background-size: cover;
+}
+
+#top_logo {
+	position: absolute;
+	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+
+	/* Font styling */
+	color: white;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 25px;
+}
+
+#top_bar {
+	width: 100%;
+	height: 25px;
+
+	background-color: #202020;
+}
+
+.info-l {
+	width: 75%;
+	height: 250px;
+
+	margin-left: 5%;
+	margin-top: 3%;
+
+	background-color: #e8e7e6;
+	box-shadow: 5px 5px #dbdad9;
+
+	/* Font styling */
+	color: black;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 25px;
+}
+
+.info-r {
+	width: 75%;
+	height: 250px;
+
+	margin-left: 17%;
+	margin-top: 3%;
+
+	background-color: #e8e7e6;
+	box-shadow: 5px 5px #dbdad9;
+
+	/* Font styling */
+	color: black;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 25px;
+}
+
+.info-img {
+	width: 270px;
+	height: 250px;
+	float: left;
+}
+
+.info-text {
+	width: 100%;
+	height: 100%;
+
+	padding: 1px;
+	font-size: 20px;
+}
+
+.border-top {
+	width: 100%;
+	height: 25px;
+
+	margin-top: 150px;
+
+	background-color: #202020;
+}
+
+.border-bottom {
+	width: 100%;
+	height: 25px;
+
+	background-color: #202020;
+}
+
+#background {
+	width: 100%;
+	height: 800px;
+
+	background-color: black;
+	position: relative;
+
+	background-image: url("tlo_1.png");
+
+	/* paralax effects */
+	min-height: 800px;
+  	background-attachment: fixed;
+  	background-position: center;
+ 	background-repeat: no-repeat;
+  	background-size: cover;
+
+}
+
+#top-push {
+	width: 100%;
+	height: 100px;
+}
+
+#blur-black-container {
+	width: 85%;
+	height: 650px;
+
+	background-color: black;
+	opacity: 0.76;
+
+	font-family: 'Josefin Sans', sans-serif;
+	color:  white;
+	text-align: center;
+
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#footer {
+	width: 100%;
+	height: 300px;
+
+	margin-top: 250px;
+	background-color: #202020;
+
+	color: white;
+	text-align: center;
+}
+
+.button {
+	width: 15%;
+	height: 550px;
+
+	text-align: center;
+	padding-top: 250px;
+
+	user-select: none;
+	cursor: pointer;
+
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+
+	float:  left;
+}
+
+#slider {
+	width: 70%;
+	height: 550px;
+
+	float: left;
+
+	background-color: white;
+}
+
+#slider-img {
+	width: 700;
+	height: 100%;
+
+	transition: opacity 2s ease;
+}
+
+.product-pane {
+	width: 19%;
+	height: 250px;
+
+	margin-left: 5%;
+	margin-top: 3%;
+	float: left;
+
+	background-color: #e8e7e6;
+	box-shadow: 5px 5px #dbdad9;
+
+	position: relative;
+	cursor: pointer;
+
+	/* Font styling */
+	color: black;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 25px;
+}
+
+.product-pane-img {
+	position: absolute;
+	transition: opacity 1s ease;
+	width: 100%;
+	height: 100%;
+}
+
+.product-pane-img:hover {
+	opacity: 0.95;
+}
+
+.category-pane {
+	width: 33%;
+	height: 900px;
+
+	transition: opacity 1s ease;
+
+	float: left;
+	position: relative;
+
+	background-color: #202020;
+}
+
+.category-pane:hover {
+	opacity: 0.95;
+}
+
+.category-h {
+	position: absolute;
+	color: white;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 45px;
+	padding-left: 45px;
+	padding-top: 15px;
+}
+
+.category-a {
+	padding: 0px;
+	text-decoration: none;
+}
+
+.category-info {
+	width: 80%;
+	height: 250px;
+
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3%;
+
+	background-color: #e8e7e6;
+	box-shadow: 5px 5px #dbdad9;
+
+	/* Font styling */
+	color: black;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 25px;
+	text-align: center;
+}
+
+.partner-img {
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+ 	width: 50%;
+
+ 	margin-top: 15px;
+}
+
+#product-img-buy {
+	width: 500px;
+	height: 500px;
+
+	background-color: lightgrey;
+
+	display:table-cell;
+
+	margin-left: 2%;
+
+	float: left;
+}
+
+.dane-container {
+	width: 700px;
+	height: 500px;
+
+	background-color: red;
+
+	margin-top: 20px;
+	margin-left: 5%;
+
+}
+
+#dane-produktu {
+	width: 90%;
+	height: 500px;
+
+	background-color: white;
+
+	margin-top: 20px;
+
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#specs {
+	width: calc(95% - 526px);
+	height: 500px;
+
+	float: left;
+	display:table-cell;
+
+	margin-left: 20px;
+
+	background-color: #202020;
+
+	font-family: 'Josefin Sans', sans-serif;
+	color:  white;
+	padding: 5px;
+	font-size: 20px;
+
+}
+
+#bosag {
+	width: 80%;
+	height: 80%;
+
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+}
+
+#buy-button {
+	width: 99px;
+	height: 33px;
+
+	background-color: #e8e7e6;
+	color: black;
+	border-radius: 25px;
+
+	text-align: center;
+	padding-top: 4px;
+
+	border: none;
+
+	transition: background-color 2s ease;
+}
+
+#buy-button:hover {
+	background-color: #fffcf9;
+	cursor: pointer;
+}
+
+.job-item {
+	width: 85%;
+	height: 75px;
+
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+
+	padding: 15px;
+
+	cursor: pointer;
+
+	background-color: #e8e7e6;
+	box-shadow: 5px 5px #dbdad9;
+
+	/* Font styling */
+	color: black;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 25px;
+}
+
+.job-title {
+	width: 70%;
+	height: 100%;
+
+	float: left;
+}
+
+.job-desc {
+	width: 30%;
+	height: 100%;
+
+	float: left;
+
+	text-align: right;
+}
+
+.job-attr-container {
+	width: 100%;
+	height: 50px;
+
+	text-align: center;
+}
+
+.job-attr {
+	width: 22%;
+	height: 60px;
+
+	display: inline-block;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-top: 15px;
+
+	background-color: #e8e7e6;
+	box-shadow: 5px 5px #dbdad9;
+
+	/* Font styling */
+	color: black;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 25px;
+
+	padding-top: 7px;
+	padding-bottom: 7px;
+	text-align: center;
+}
+
+.job-attr-desc {
+	width: 100%;
+	height: 45%;
+
+	background-color: red;
+
+	/* Font styling */
+	color: black;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 25px;
+
+	padding-top: 7px;
+	text-align: center;
+}
+
+.job-desc-title {
+	width: 100%;
+	height: 55%;
+
+	background-color: blue;
+
+	/* Font styling */
+	color: black;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 25px;
+
+	padding-top: 7px;
+	text-align: center;
+}
+
+.form-item {
+	width: 200px;
+	height: 300px;
+
+	float: left;
+}
+
+.nab-link {
+	/* Klasa linku w navbarze na górze strony */
+	text-decoration: none;
+	color: white;
+	font-family: 'Josefin Sans', sans-serif;
+	padding: 5px;
+	font-size: 13px;
+	display: inline-block;
+}

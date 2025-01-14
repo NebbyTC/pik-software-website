@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<title>Pik Software Development</title>
+
+	<link rel="icon" href="static/ikona.png">
+	<link rel="stylesheet" type="text/css" href="static/style.css">
+	<script src="static/slider.js"></script>
+
+</head>
+<body onload=slajder_produkty.setSlide()>
+	<div id="container">
+		
+		<!-- Logo -->
+		<div id="top_logo_background">
+			<div id="top_logo">
+
+				<a href="/">
+					<h2>Pik Software Development</h2>
+					to tutaj powstaje oprogramowanie
+				</a>
+
+			</div>
+		</div>
+
+		<!-- Navbar -->
+		<nav id="top_bar">
+			<a href="/produkty" class="nab-link" >Produkty</a>
+			<a href="/rozwiązania" class="nab-link" >Rozwiązania</a>
+			<a href="/akcje" class="nab-link" >Akcje</a>
+			<a href="/kontrybucje" class="nab-link" >Kontrybucje</a>
+			<a href="/praca" class="nab-link" >Praca</a>
+		</nav>
+
+		<!-- Zawartość ekskluzywna dla pliku .html -->
+		{% block content %}{% endblock %}
+
+		<!-- Stopka -->
+		<footer id="footer"></footer>
+
+	</div>
+</body>
+</html>

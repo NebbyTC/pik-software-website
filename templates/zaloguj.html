@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<title>Pik Software Development</title>
+
+	<link rel="icon" href="static/ikona.png">
+	<link rel="stylesheet" type="text/css" href="static/style.css">
+	<script src="static/slider.js"></script>
+
+</head>
+<body onload=slajder_produkty.setSlide()>
+	<div id="container">
+		
+		<div id="top_logo_background">
+			<div id="top_logo">
+				<h2>Pik Software Development</h2>
+				to tutaj powstaje oprogramowanie
+			</div>
+		</div>
+
+		<nav id="top_bar">
+			<a href="/produkty">Produkty</a><a href="/rozwiązania">Rozwiązania</a><a href="/akcje">Akcje</a><a href="/kontrybucje">Kontrybucje</a><a href="/zaloguj">Moje Konto</a><a href="/praca">Praca</a>
+		</nav>
+
+		<div class="category-info" style="height: 70px;">
+			<h1>Zaloguj się</h1>
+		</div>
+
+		<div class="category-info" style="height: 300px;">
+			<form method="POST" action="/mojekonto">
+
+				Nazwa Użytkownika: <input type="text" name="nazwa" style="width:250px margin-left: 25px;"><br>
+				e-mail: <input type="text" name="email" style="width:250px margin-left: 25px;"><br>
+				Hasło:             <input type="text" name="haslo" style="width:250px margin-left: 25px;">
+
+				<input type="submit">
+
+			</form>
+		</div>
+
+
+		<!-- Stopka -->
+		<footer id="footer"></footer>
+
+	</div>
+</body>
+</html>

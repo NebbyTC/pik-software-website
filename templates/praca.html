@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<title>Pik Software Development</title>
+
+	<link rel="stylesheet" type="text/css" href="static/style.css">
+	<script src="static/slider.js"></script>
+	<script src="static/categoryRedirector.js"></script>
+
+</head>
+<body onload=setSlide()>
+	<div id="container">
+		
+		<div id="top_logo_background">
+			<div id="top_logo">
+
+				<a href="/">
+					<h2>Pik Software Development</h2>
+					to tutaj powstaje oprogramowanie
+				</a>
+
+			</div>
+		</div>
+
+		<nav id="top_bar">
+			<a href="/produkty" class="nab-link" >Produkty</a>
+			<a href="/rozwiązania" class="nab-link" >Rozwiązania</a>
+			<a href="/akcje" class="nab-link" >Akcje</a>
+			<a href="/kontrybucje" class="nab-link" >Kontrybucje</a>
+			<a href="/praca" class="nab-link" >Praca</a>
+		</nav>
+
+
+		<div class="category-info">
+			<h1>Oferta pracy w Pik</h1> 
+			<div style="width:100%; height:100%; text-align: left; padding: 10px;">
+				W Pik niezależnie od naszego sposobu pracy, profesji czy doświadczenia, zawsze robimy wszystko aby nasze produkty prezentowały jak najwyższą jakość.
+			</div>
+		</div>
+
+		<article class="job-item">
+			<div class="job-title"><h3>Starszy Programista Python z pygame/PikEngine</h3></div>
+			<div class="job-desc">13-17 tyś. zł. Szczecin</div>
+			<form method="POST" action="/aplikuj">
+				<input name="stanowisko" type="hidden" value="Starszy programista Python z Pygame/PikEngine"></input>
+				<input style="background-color: #202020; color: white;" id="buy-button" value="Aplikuj" type="submit"></input>
+			</form>
+		</article>
+
+		<article class="job-item">
+			<div class="job-title"><h3>Programista Python z tkinter i socket</h3></div>
+			<div class="job-desc">13-17 tyś. zł. Szczecin</div>
+			<form method="POST" action="/aplikuj">
+				<input name="stanowisko" type="hidden" value="Programista Python z tkinter i socket"></input>
+				<input style="background-color: #202020; color: white;" id="buy-button" value="Aplikuj" type="SUBMIT"></input>
+			</form>
+		</article>
+
+		<article class="job-item">
+			<div class="job-title"><h3>Młodszy Programista Java z MySQL</h3></div>
+			<div class="job-desc">11-13 tyś. zł. Szczecin</div>
+			<form method="POST" action="/aplikuj">
+				<input name="stanowisko" type="hidden" value="Programista Java z MySQL"></input>
+				<input style="background-color: #202020; color: white;" id="buy-button" value="Aplikuj" type="SUBMIT"></input>
+			</form>
+		</article>
+
+		<article class="job-item">
+			<div class="job-title"><h3>Grafik/Projektant gier</h3></div>
+			<div class="job-desc">13-14 tyś. zł. Szczecin</div>
+			<form method="POST" action="/aplikuj">
+				<input name="stanowisko" type="hidden" value="Programista Java z MySQL"></input>
+				<input style="background-color: #202020; color: white;" id="buy-button" value="Aplikuj" type="SUBMIT"></input>
+			</form>
+		</article>
+
+		<article class="job-item">
+			<div class="job-title"><h3>Tester Gier</h3></div>
+			<div class="job-desc">3-5 tyś. zł. Szczecin</div>
+		</article>
+
+		<!-- Stopka -->
+		<footer id="footer" style="margin-top: 1000px;"></footer>
+
+	</div>
+</body>
+</html>

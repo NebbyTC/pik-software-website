@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<title>Pik Software Development</title>
+
+	<link rel="icon" href="static/ikona.png">
+	<link rel="stylesheet" type="text/css" href="static/style.css">
+	<script src="static/slider.js"></script>
+
+</head>
+<body onload=slajder_kontrybucje.setSlide()>
+	<div id="container">
+		
+		<div id="top_logo_background">
+			<div id="top_logo">
+
+				<a href="/">
+					<h2>Pik Software Development</h2>
+					to tutaj powstaje oprogramowanie
+				</a>
+
+			</div>
+		</div>
+
+		<nav id="top_bar">
+			<a href="/produkty" class="nab-link" >Produkty</a>
+			<a href="/rozwiązania" class="nab-link" >Rozwiązania</a>
+			<a href="/akcje" class="nab-link" >Akcje</a>
+			<a href="/kontrybucje" class="nab-link" >Kontrybucje</a>
+			<a href="/praca" class="nab-link" >Praca</a>
+		</nav>
+
+
+		<div class="category-info">
+			<h1>Partnerzy naszej firmy</h1>
+			<div style="width:100%; height:100%; text-align: left; padding: 10px;">
+				Firma Pik bierze udział we współpracy z najlepszymi firmami z branży, w celu tworzenia
+				jeszcze lepszego oprogramowania dla swoich klientów.
+			</div>
+		</div>
+
+		<!-- Loga partnerów pik'u -->
+		<img class="partner-img" src="static/partner_1.png">
+
+
+		<br><br><br><br><br><br><br><br>
+		<div class="category-info">
+			<h1>Nasze projekty partnerskie</h1>
+			<div style="width:100%; height:100%; text-align: left; padding: 10px;">
+				Razem z naszymi partnerami tworzymy nowatorskie projekty, które wyróżniają się
+				nie tylko nietuzinkowym doborem technologi, ale i starannością o każdy szczegół.
+			</div>
+		</div>
+
+
+		<article class="info-l">
+			<div class="info-img"><img src="static/partner_product_1.png" style="float: left"></div>
+			<div class="info-text">
+				<h2>MorgunOs</h2>
+				Jest to system operacyjny, tworzony wspólnie z firmą Milos Idea Microsystems. 
+				Od konkurencji odróżnia go staromodny styl i implementacja w Javie.
+			</div>
+		</article>
+
+		<article class="info-r">
+			<div class="info-img"><img src="static/partner_product_2.png" style="float: left"></div>
+			<div class="info-text">
+				<h2>DB14</h2>
+				Jest projektem partnerskim stworzonym dla lo14 w Szczecinie. Służy do spisywania 
+				szkolnych odczynników chemicznych i należy do najbardziej innowacyjnych technologi
+				w Polskich szkołach.
+			</div>
+		</article>
+
+		<!-- Sekcja II -->
+		<div class="border-top"></div>
+
+		<div id="background">
+			<div class="top-push"><br><br><br><br></div>
+			<div id="blur-black-container">
+				<h1 style="padding: 5px;">Zobacz jak wyglądają owoce współpracy!</h1>
+				<!-- Slajder -->
+				<div class="button" onclick=slajder_kontrybucje.slidedown()><</div>
+				<div id="slider"><img id="slider-img"src=""></div>
+				<div class="button" onclick=slajder_kontrybucje.slideup()>></div>
+			</div>
+		</div>
+
+		<div class="border-bottom"></div>
+
+		<!-- Stopka -->
+		<footer id="footer"></footer>
+
+	</div>
+</body>
+</html>

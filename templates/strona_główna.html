@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+		<article class="info-l">
+			<div class="info-img"><img src="static/info_1.png" style="float: left"></div>
+			<div class="info-text">
+				<h2>Firma, której możesz zaufać</h2>
+				W Pik troszczymy się o jakość usług i produktów dostarcznych naszym
+				klientom, dlatego każdy nasz program jest starannie projektowany i
+				wdrażany, tak aby zapewnić najwyższą użyteczność i wygodę jego użytkownikom.
+			</div>
+		</article>
+
+		<article class="info-r">
+			<div class="info-img"><img src="static/info_2.png" style="float: left"></div>
+			<div class="info-text">
+				<h2>Programowanie to nasze rzemiosło</h2>
+				Nasi programiści to profesjonaliści, którzy znają się na swojej
+				pracy. To właśnie dlatego każdy nasz program odznacza się doskonałym
+				wykonaniem<br> i wytrzymałością.
+			</div>
+		</article>
+
+		<!-- Sekcja II -->
+		<div class="border-top"></div>
+
+		<div id="background">
+			<div class="top-push"><br><br><br><br></div>
+			<div id="blur-black-container">
+				<h1 style="padding: 5px;">Sprawdź nasze produkty!</h1>
+				<!-- Slajder -->
+				<div class="button" onclick=slajder_produkty.slidedown()><</div>
+				<div id="slider"><img id="slider-img"src=""></div>
+				<div class="button" onclick=slajder_produkty.slideup()>></div>
+			</div>
+		</div>
+
+		<div class="border-bottom"></div>
+
+{% endblock %}
